@@ -11,11 +11,6 @@ $.getJSON('/src/js/productos.json', function (json_data) {
 	console.log(json_data);
 });
 
-$('.btn-cerrar-popup').click(function () {
-	event.preventDefault();
-	$('.popup').removeClass("active");
-});
-
 $('#sec-ini').click(function (event) {
 	event.preventDefault();
 	$("html, body").animate({

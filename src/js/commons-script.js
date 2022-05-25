@@ -12,4 +12,26 @@ $(document).ready(function () {
 			$("header").removeClass("active")
 		}
 	});
+
+	$('.btn-cerrar-popup').click(function (event) {
+		event.preventDefault();
+		$('.popup').removeClass("active");
+	});
+
+	$('#btn-login').click(function (event) {
+		event.preventDefault();
+		$('#login-popup').addClass("active");
+	});
+
+	$('#btn-login, #btn-login-log').click(function (event) {
+		event.preventDefault();
+		$('.popup').removeClass("active");
+		$('#login-popup').addClass("active");
+	});
+
+	$('#btn-reg-log').click(function (event) {
+		event.preventDefault();
+		$('.popup').removeClass("active");
+		$('#register-popup').addClass("active");
+	});
 });
