@@ -1,0 +1,55 @@
+// Base
+@import '../base/_page-reset'
+
+.asc
+	padding: 20px 10px
+	flex-direction: column
+	@media screen and ( min-width: 992px )
+		padding: 30px 40px
+	& .at-container
+		width: 100%
+		margin-bottom: 30px
+		display: flex
+		flex-direction: row
+		& h3
+			width: auto
+			padding: 5px 20px
+			color: #ffffff
+			background-color: #252947
+			border-radius: 4px
+			display: flex
+			flex-direction: row
+			align-items: center
+			& span
+				width: 32px
+				height: 32px
+				margin-right: 15px
+				display: flex
+				flex-direction: row
+				justify-content: center
+				align-items: center
+				& svg
+					width: 100%
+					height: auto
+	& .aintro-container
+		width: 100%
+		margin-bottom: 30px
+		display: flex
+		flex-direction: column
+		align-items: center
+		& h5
+			width: 100%
+			color: #252947
+			text-align: center
+			text-align: justify
+			@media screen and ( min-width: 992px )
+				width: 60%
+		& p
+			width: 100%
+			color: #343434
+			text-align: justify
+			@media screen and ( min-width: 992px )
+				width: 60%
+	& .ab-container
+		width: 100%
+		display: flex

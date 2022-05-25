@@ -1,0 +1,335 @@
+// Base
+@import 'base/_page-reset'
+
+@keyframes fadein
+	from
+		opacity: 0
+	to
+		opacity: 1
+.d-c-g
+	width: 100%
+	margin-bottom: 60px
+	display: flex
+	flex-direction: row
+	justify-content: center
+	align-items: center
+	@media screen and ( min-width: 992px )
+		justify-content: start
+	& h3
+		text-align: center
+		padding: 8px 30px
+		font-size: 20px
+		color: #ffffff
+		border-radius: 40px
+		border: 1px solid #616161
+		border-left: 0px
+		background: rgb(40,36,35)
+		background: -moz-linear-gradient(90deg, rgba(40,36,35,1) 0%, rgba(26,22,21,1) 100%)
+		background: -webkit-linear-gradient(90deg, rgba(40,36,35,1) 0%, rgba(26,22,21,1) 100%)
+		background: linear-gradient(90deg, rgba(40,36,35,1) 0%, rgba(26,22,21,1) 100%)
+		filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#282423",endColorstr="#1a1615",GradientType=1)
+		@media screen and ( min-width: 992px )
+			font-size: 35px
+			border-radius: 0px 40px 40px 0px
+			text-align: end
+			padding: 8px 30px 8px 50px
+section
+	&#s-b
+		width: 100%
+		position: relative
+		& video
+			width: 100%
+		& img
+			width: 100%
+		& #b-c
+			width: 100%
+			height: 100%
+			display: flex
+			justify-content: center
+			align-items: center
+			position: absolute
+			z-index: 1
+			&>svg
+				width: 20%
+				border-radius: 20px
+				background-color: #fff
+				padding: 20px
+				box-shadow: 0 8px 17px 2px rgba(0,0,0,0.14), 0 3px 14px 2px rgba(0,0,0,0.12), 0 5px 5px -3px rgba(0,0,0,0.2)
+
+	&#s-c
+		width: 100%
+		padding: 30px 0px
+		display: flex
+		flex-direction: column
+		justify-content: center
+		align-items: center
+		position: relative
+		& #c-c
+			width: 100%
+			display: flex
+			flex-wrap: wrap
+			justify-content: space-around
+			align-items: center
+			margin-bottom: 40px
+			@media screen and ( min-width: 992px )
+				width: 100%
+				flex-direction: row
+			& .card-c
+				width: calc(100% / 2 - 10px)
+				border-radius: 10px
+				margin-bottom: 20px
+				display: flex
+				flex-direction: column
+				justify-content: start
+				align-items: center
+				box-shadow: 0 8px 10px 1px rgba(0,0,0,.14), 0 3px 14px 2px rgba(0,0,0,.12), 0 5px 5px -3px rgba(0,0,0,.2)
+				transition: all ease .4s
+				background-color: #282423
+				@media screen and ( min-width: 992px )
+					width: 100%
+					padding: 10px 80px
+				&:hover
+					transform: scale(1.1,1.1)
+					background-color: #FFD3AC
+				&.active
+					background-color: #FE8704 !important
+				& h4
+					color: #ffffff
+				@media screen and ( min-width: 992px )
+					width: calc( 100% / 6 - 30px)
+					padding: 10px
+				& div:nth-child(1)
+					width: 100%
+					margin-bottom: 10px
+					& h4
+						font-size: 20px
+						text-align: center
+				& div:nth-child(2)
+					& a
+						& img
+							width: 100%
+	&#s-p
+		width: 100%
+		display: flex
+		flex-direction: column
+		justify-content: center
+		align-items: center
+		padding-bottom: 100px
+		& #sp-cm
+			width: 100%
+			display: flex
+			flex-direction: row
+			justify-content: space-around
+			align-items: center
+			& #searh
+				width: 100%
+				margin-right: 20px
+				text-align: center
+				display: flex
+				flex-direction: row
+				justify-content: end
+				align-items: center
+				@media screen and ( min-width: 992px )
+					width: auto
+				& div
+					width: 100%
+					display: flex
+					flex-direction: column
+					justify-content: center
+					align-items: center
+					@media screen and ( min-width: 992px )
+						flex-direction: row
+					& input
+						width: 90%
+						margin-bottom: 10px
+						border: none
+						color: #5B5B5B
+						padding: 7px 15px
+						border-radius: 8px
+						@media screen and ( min-width: 992px )
+							width: auto
+							margin-bottom: 0px
+							border-radius: 0px
+						&:not(:last-child)
+							margin-right: 5px
+					& input:nth-child(1)
+						@media screen and ( min-width: 992px )
+							border-radius: 20px 0px 0px 20px
+					& a
+						font-size: 13px
+						font-weight: bold
+						color: #94BCC7
+						background-color: #FFCE00
+						padding: 5px 15px
+						border-radius: 20px
+						display: flex
+						flex-direction: row
+						justify-content: center
+						align-items: center
+						@media screen and ( min-width: 992px )
+							border-radius: 0px 20px 20px 0px
+						&:hover
+							background-color: #fff
+							color: #FFCE00
+							box-shadow: 0 15px 3px -10px rgba(68,68,68,.2), 0 15px 10px -5px rgba(68,68,68,.4)
+							& span
+								background-color: #FFCE00
+						& span
+							width: 20px
+							height: 20px
+							margin-right: 5px
+							border-radius: 50%
+							background-color: #94BCC7
+		& #sp-cb
+			width: 90%
+			display: flex
+			flex-direction: row
+			flex-wrap: wrap
+			justify-content: center
+			align-items: center
+			padding: 0px
+			background-color: #ffffff
+			border-radius: 20px
+			@media screen and ( min-width: 992px )
+				padding: 30px
+			& .p-prin
+				width: 100%
+				height: 395px
+				border-radius: 15px
+				margin: 15px
+				display: flex
+				flex-direction: column
+				justify-content: start
+				align-items: start
+				position: relative
+				box-shadow: 0 2px 1px -1px rgba(0,0,0,.2), 0 1px 1px 0 rgba(0,0,0,.14), 0 1px 3px 0 rgba(0,0,0,.12)
+				transition: all ease .2s
+				&:hover
+					box-shadow: 0 8px 10px 1px rgba(0,0,0,.14), 0 3px 14px 2px rgba(0,0,0,.12), 0 5px 5px -3px rgba(0,0,0,.2)
+					transform: scale(1.01,1.01)
+				@media screen and ( min-width: 992px )
+					width: calc( 50% - 50px )
+					flex-direction: row
+				& .c-tex-p
+					width: 100%
+					height: 398px
+					border-radius: 5px 5px 0px 0px
+					background-color: #282423
+					display: flex
+					flex-direction: column
+					justify-content: space-between
+					align-items: start
+					@media screen and ( min-width: 992px )
+						width: 40%
+						border-radius: 5px 0px 0px 5px
+					& .desc-t
+						padding: 10px
+						color: #fff
+						@media screen and ( min-width: 992px )
+							padding: 20px 0px 0px 20	px
+						& #nom-p
+							font-size: 20px
+							font-weight: bold
+						& #cont-p
+							font-size: 17px
+						& #prec-p
+							font-size: 17px
+							font-weight: bold
+					& .mun-loc
+						border-radius: 8px
+						bottom: 20px
+						left: 0
+						position: absolute
+						z-index: 1
+						& p
+							padding: 5px 15px
+							color: #ffffff
+							background-color: #FE8704
+							border-radius: 0px 20px 20px 0px
+							font-size: 25px
+							font-weight: bold
+				& .c-img-p
+					width: 100%
+					height: 398px
+					overflow: hidden
+					border-radius: 0px 0px 20px 20px
+					@media screen and ( min-width: 992px )
+						width: 60%
+						border-radius: 0px 10px 10px 0px
+					& img
+						width: 100%
+						height: 100%
+						border-radius: 0px 0px 8px 8px
+						@media screen and ( min-width: 992px)
+							border-radius: 0px 8px 8px 0px
+			& .p-sec
+				width: 100%
+				height: 410px
+				border: 6px solid #fff
+				border-radius: 15px
+				margin: 15px
+				display: none
+				flex-direction: column
+				justify-content: start
+				align-items: start
+				position: relative
+				box-shadow: 0 2px 1px -1px rgba(0,0,0,.2), 0 1px 1px 0 rgba(0,0,0,.14), 0 1px 3px 0 rgba(0,0,0,.12)
+				transition: all ease .2s
+				&:hover
+					box-shadow: 0 8px 10px 1px rgba(0,0,0,.14), 0 3px 14px 2px rgba(0,0,0,.12), 0 5px 5px -3px rgba(0,0,0,.2)
+					transform: scale(1.05,1.05)
+				@media screen and ( min-width: 992px)
+					width: 20%
+					display: flex
+				& .c-tex-p-sec
+					width: 100%
+					height: 40%
+					border-radius: 8px 8px 0px 0px
+					background: rgb(148,188,199)
+					background: -moz-linear-gradient(90deg, rgba(148,188,199,1) 0%, rgba(82,170,168,1) 100%)
+					background: -webkit-linear-gradient(90deg, rgba(148,188,199,1) 0%, rgba(82,170,168,1) 100%)
+					background: linear-gradient(90deg, rgba(148,188,199,1) 0%, rgba(82,170,168,1) 100%)
+					filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#94bcc7",endColorstr="#52aaa8",GradientType=1)
+					display: flex
+					flex-direction: column
+					justify-content: space-between
+					align-items: start
+					& .desc-t-sec
+						width: 100%
+						height: 100%
+						padding: 20px 0px 0px 20px
+						color: #fff
+						& #nom-p-sec
+							font-size: 30px
+							font-weight: bold
+						& #cont-p-sec
+							font-size: 20px
+						& #prec-p-sec
+							font-size: 20px
+							font-weight: bold
+					& .mun-loc-sec
+						border-radius: 8px
+						bottom: 20px
+						left: 0
+						position: absolute
+						z-index: 1
+						& p
+							padding: 5px 15px
+							color: #fff
+							background-color: #94BCC7
+							border-radius: 0px 20px 20px 0px
+							font-size: 22px
+							font-weight: bold
+				& .c-img-p-sec
+					width: 100%
+					height: 60%
+					overflow: hidden
+					border-radius: 0px 0px 8px 8px
+					display: flex
+					flex-direction: row
+					justify-content: center
+					align-items: self-end
+					& img
+						width: 100%
+						height: 100%
+						border-radius: 0px 0px 8px 8px

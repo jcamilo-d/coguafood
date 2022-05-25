@@ -1,0 +1,71 @@
+// Base
+@import '../base/_page-reset'
+
+#s-dashboard
+	background-image: url("/src/img/index/asesores-bg.png")
+	background-size: cover
+	background-repeat: no-repeat
+	display: flex
+	flex-direction: row
+	& .dshb-sidebar
+		width: 200px
+		height: calc( 100vh - 70px )
+		background-color: #252947
+		position: absolute
+		top: 0px
+		left: 0px
+		& ul
+			width: 100%
+			height: 100%
+			padding: 20px 10px
+			list-style-type: none
+			display: flex
+			flex-direction: column
+			& li
+				width: 100%
+				margin-bottom: 10px
+				display: flex
+				flex-direction: row
+				&:last-child
+					margin-top: auto
+				& a
+					width: 100%
+					padding: 3px
+					background-color: #00e5e5
+					border-radius: 20px
+					box-shadow: 0 4px 5px 0 rgba(0,0,0,0.14), 0 1px 10px 0 rgba(0,0,0,0.12), 0 2px 4px -1px rgba(0,0,0,0.3)
+					text-decoration: none
+					display: flex
+					flex-direction: row
+					align-items: center
+					@media screen and ( min-width: 992px )
+						padding: 3px 5px 3px 3px
+					& span:first-child
+						width: 24px
+						height: 24px
+						padding: 2px
+						background-color: #252947
+						border-radius: 50%
+						display: flex
+						flex-direction: row
+						justify-content: center
+						align-items: center
+						@media screen and ( min-width: 992px )
+							margin-right: 10px
+						& img
+							width: 100%
+							height: auto
+					& span:last-child
+						color: #ffffff
+						display: none
+						font-size: 14px
+						font-family: 'Quicksand Semibold', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', Arial, sans-serif
+						@media screen and ( min-width: 992px )
+							display: block
+		@media screen and ( min-width: 992px )
+			position: static
+	& .dshb-content-container
+		width: 100%
+		@media screen and ( min-width: 992px )
+			padding: 20px
+			width: calc( 100% - 200px )
